@@ -54,7 +54,7 @@ const ContactUs = () => {
 
     try {
       // Make POST request to backend API
-      const response = await axios.post('http://localhost:4000/api/users/contact', formData); // Update URL based on your backend API
+      const response = await axios.post('http://158.220.107.161:4000/api/users/contact', formData); // Update URL based on your backend API
 
       if (response.status === 201) {
         setResponseMessage('Your message has been sent successfully!');

@@ -34,7 +34,7 @@ const PaymentForm = ({ userID }) => {
             amount: parseFloat(form.amount),
         };
 
-        axios.post('http://localhost:4000/api/payment/payment', paymentData)
+        axios.post('http://158.220.107.161:4000/api/payment/payment', paymentData)
             .then(response => {
                 if (response.data && response.data.url) {
                     window.location.href = response.data.url;

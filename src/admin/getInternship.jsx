@@ -29,7 +29,7 @@ const GetInternshipsFormData = () => {
       }
 
       try {
-        const response = await axios.get('http://localhost:4000/api/join/get-all-internshipApplication', {
+        const response = await axios.get('http://158.220.107.161:4000/api/join/get-all-internshipApplication', {
           headers: {
             Authorization: `Bearer ${token}`, 
           },

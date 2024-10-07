@@ -11,7 +11,7 @@ const TransactionDetails = () => {
     useEffect(() => {
         const fetchTransaction = async () => {
             try {
-                const response = await axios.get(`http://localhost:4000/api/payment/transaction/${merchantTransactionId}`);
+                const response = await axios.get(`http://158.220.107.161:4000/api/payment/transaction/${merchantTransactionId}`);
                 setTransaction(response.data);
             } catch (error) {
                 setError('Error fetching transaction details');

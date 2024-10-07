@@ -13,7 +13,7 @@ const GetVayamFormData = () => {
     const fetchCandidates = async () => {
       try {
         const token = localStorage.getItem('token'); 
-        const response = await axios.get('http://localhost:4000/api/join/get-all-VayamApplication', {
+        const response = await axios.get('http://158.220.107.161:4000/api/join/get-all-VayamApplication', {
           headers: {
             Authorization: `Bearer ${token}`, 
           },

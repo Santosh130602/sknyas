@@ -126,7 +126,7 @@ const InternshipForm = () => {
 
     try {
       const response = await axios.post(
-        'http://localhost:4000/api/join/internship-register',
+        'http://158.220.107.161:4000/api/join/internship-register',
         dataToSend,
         {
           headers: {

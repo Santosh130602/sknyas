@@ -23,10 +23,10 @@ const Profile = () => {
                     throw new Error('User ID not found in local storage.');
                 }
 
-                const transactionResponse = await axios.get(`http://localhost:4000/api/user-payment/transactions/${userId}`);
+                const transactionResponse = await axios.get(`http://158.220.107.161:4000/api/user-payment/transactions/${userId}`);
                 setTransactions(transactionResponse.data.data);
 
-                const userResponse = await axios.get(`http://localhost:4000/api/user-payment/internuser/${userId}`);
+                const userResponse = await axios.get(`http://158.220.107.161:4000/api/user-payment/internuser/${userId}`);
                 const userData = userResponse.data.data[0];
 
                 setUserDetails(userData);

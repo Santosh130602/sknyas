@@ -12,7 +12,7 @@ const GetUserTransactions = () => {
         const fetchTransactions = async () => {
             try {
                 // Fetch user transactions
-                const transactionsResponse = await axios.get(`http://localhost:4000/api/user-payment/get-user-transactions`, {
+                const transactionsResponse = await axios.get(`http://158.220.107.161:4000/api/user-payment/get-user-transactions`, {
                     headers: {
                         Authorization: `Bearer ${token}`, 
                     },

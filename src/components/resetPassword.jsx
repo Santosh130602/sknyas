@@ -150,7 +150,7 @@ const PasswordReset = () => {
     }
 
     try {
-      const response = await axios.post(`/api/reset-password/${token}`, { password, confirmPassword });
+      const response = await axios.post(`http://158.220.107.161:4000/api/reset-password/${token}`, { password, confirmPassword });
 
       if (response.status === 200) {
         setSuccessMessage("Password has been successfully reset.");

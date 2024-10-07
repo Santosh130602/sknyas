@@ -16,7 +16,7 @@ const SignupForm = () => {
     setError('');
 
     try {
-      const response = await axios.post('http://localhost:4000/api/users/register', {
+      const response = await axios.post('http://158.220.107.161:4000/api/users/register', {
         fullName,
         email,
         password,

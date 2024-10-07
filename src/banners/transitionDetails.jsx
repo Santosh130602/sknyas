@@ -13,7 +13,7 @@ const UserTransactions = ({ userID }) => {
     useEffect(() => {
         const fetchTransactions = async () => {
             try {
-                const response = await axios.get(`http://localhost:4000/api/payment/transactions/${userID}`);
+                const response = await axios.get(`http://158.220.107.161:4000/api/payment/transactions/${userID}`);
                 setTransactions(response.data);
             } catch (error) {
                 setError('Error fetching transactions');

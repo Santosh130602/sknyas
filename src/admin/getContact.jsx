@@ -13,7 +13,7 @@ const GetContactsList = () => {
     const fetchContacts = async () => {
         try {
             const token = localStorage.getItem('token'); 
-            const response = await axios.get('http://localhost:4000/api/users/getcontact-details', {
+            const response = await axios.get('http://158.220.107.161:4000/api/users/getcontact-details', {
                 headers: {
                     Authorization: `Bearer ${token}`, 
                 },

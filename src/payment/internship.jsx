@@ -26,7 +26,7 @@ const InternshipPaymentForm = () => {
     setLoading(true);
     try {
       // Create the order using your backend API
-      const orderURL = "http://localhost:4000/api/intern/orders";
+      const orderURL = "http://158.220.107.161:4000/api/intern/orders";
       const { data } = await axios.post(orderURL, {
         amount: amount,
         userID: userID,
@@ -44,7 +44,7 @@ const InternshipPaymentForm = () => {
         handler: async (response) => {
           try {
             // Verify the payment on backend
-            const verifyURL = "http://localhost:4000/api/intern/verify";
+            const verifyURL = "http://158.220.107.161:4000/api/intern/verify";
             const verificationResponse = await axios.post(verifyURL, {
               razorpay_orderID: response.razorpay_order_id,
               razorpay_paymentID: response.razorpay_payment_id,

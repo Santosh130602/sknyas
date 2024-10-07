@@ -1206,7 +1206,7 @@ const VayamForm = () => {
     const dataToSend = { ...formData, isStudent, amount };
     
     try {
-      const response = await axios.post('http://localhost:4000/api/join/vayam-register', dataToSend);
+      const response = await axios.post('http://158.220.107.161:4000/api/join/vayam-register', dataToSend);
       console.log(response.data); 
 
       // navigate("/vayam-payment", { state: { amount } });

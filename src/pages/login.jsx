@@ -13,7 +13,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:4000/api/users/login', {
+      const response = await axios.post('http://158.220.107.161:4000/api/users/login', {
         email,
         password,
       });
