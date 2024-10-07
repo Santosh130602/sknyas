@@ -1,0 +1,41 @@
+.event-heading {
+  font-family: 'eventHeading', 'Merriweather', sans-serif; /* Adjust as needed */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+.support{
+  background-image: url('./assets/hero1.png');
+  position: relative;
+}
+
+
+
+/* bg-gradient-to-r from-red-500 via-yellow-400 to-orange-500 */
+
+/* In your CSS file */
+@keyframes blink {
+  0%, 100% { 
+    opacity: 1; 
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 0.7; 
+    transform: scale(1.1); /* Increase size by 10% at mid-point */
+  }
+}
+
+.blink-animation {
+  animation: blink 1s infinite;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+  .head-class {
+    display: none;
+  }
+}
+
+
